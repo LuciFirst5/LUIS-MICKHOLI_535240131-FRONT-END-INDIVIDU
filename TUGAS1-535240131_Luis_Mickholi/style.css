@@ -1,54 +1,84 @@
-  body{
-   font-family: Calibri, Arial, sans-serif;
-   background: #fff;
-   color:#000;
-   margin:0;
-   padding:0
+body {
+  font-family: Calibri, Arial, sans-serif;
+  background: #fff;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.cv-container {
+  width: 82%;
+  max-width: 850px;
+  margin: 31px auto;
+  background: #fff;
+  padding: 26px 34px;
+  border: 2px solid navy;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 21px;
+}
+
+.section-title {
+  background: #d6e4ff;
+  padding: 7px 13px;
+  margin: 21px 0 11px;
+  font-weight: bold;
+  border: 2px solid #000080;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.profile-info {
+  flex: 1;
+}
+
+.profile-photo {
+  max-width: 150px;
+  width: 100%;
+  height: auto;
+  border: 1px solid #000;
+  margin-left: 19px;
+}
+
+ul {
+  margin: 9px 0 0 24px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 24px;
+  font-size: 13px;
+  color: #444;
+}
+
+@media (max-width: 600px) {
+  .cv-container {
+    padding: 15px;
   }
 
-  .cv-container {
-    width:82%;
-    max-width:850px;
-   margin: 31px auto;
-    background:#fff;
-   padding: 26px 34px;
-    border:2px solid navy
+  .profile-photo {
+    max-width: 100px;
+    margin: 15px auto;
+    display: block;
   }
 
   h1 {
-   text-align:center;
-   text-transform: uppercase;
-    margin-bottom:21px;
+    font-size: 20px;
   }
 
-  .section-title{
-    background:#d6e4ff;
-   padding:7px 13px;
-    margin:21px 0 11px;
-   font-weight:bold;
-    border:2px solid #000080
+  .section-title {
+    font-size: 14px;
   }
 
-  .profile-container{
-   display:flex;
-    justify-content: space-between;
-   align-items:flex-start;flex-wrap:wrap
+  ul {
+    margin-left: 15px;
   }
-
-  .profile-info{flex:1}
-  .profile-photo {
-   width:151px;
-   border:1px solid #000;
-    margin-left:19px
-  }
-
-  ul{
-   margin:9px 0 0 24px
-  }
-
-  footer {
-   text-align:center;
-    margin-top:24px;
-   font-size:13px;
-    color:#444
-  }
+}
